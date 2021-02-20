@@ -21,9 +21,9 @@ El caso de archivo * terraform.tfvars *  debe tener el token y clave SSH entrega
 
 2. Para comenzar usted se debe crear un token en DigitalOcean el cual debe utilizar de la siguiente manera : 
 
-''''
+''
 export DIGITALOCEAN_API_TOKEN = [TOKEN-DigitalOcean]
-''''
+''
 
 3. Luego usted se debe ubicar en el subdirectorio de packer y ejecutar: 
 '' 

@@ -41,9 +41,9 @@ terraform apply
 5. Al terminar el paso 3 usted contará con una infraestructura en la nube que contiene Jupyter y MongoBD para trabajar con los datos de COVID 19 ya mencionados. La puede revisar en la sección de Droplets junto con su respectiva dirección IP
 
 6. Puede ingresar a la maquina creada mediante la dirección IP con : 
-
+```
 ssh -L localhost:8889:localhost:8889 root@[DirecciónIP]
-
+```
 7.Ejecute el siguiente script en bash que le permitirá importar los archivos CSV hacia MongoBD: 
 
 ```

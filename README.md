@@ -5,4 +5,27 @@ En este contexto se propone la construcción de una plataforma analítica de dat
 
 - Jupyter
 - MongoBD
+### Prerrequisitos 
+Previamente tener instalado y configurado en el Host:
+- Packer 
+- Ansible 
+- Terraform 
+### Instrucciones
+1. Utilice este repositorio en su ordenado.Es fundamental que usted tenga en su directorio de trabajo los siguientes subdirectorios con los siguientes archivos : 
 
+- ansible (download-latest-JHU.sh y install.yml)
+- packer (ubuntu2004-digitalocean.json)
+- terraform (create_droplet.tf,versions.tf y terraform.tfvars)
+
+El caso de archivo * terraform.tfvars *  debe tener el token y clave SSH entregada por DigitalOcean
+
+2. Para comenzar usted se debe crear un token en DigitalOcean el cual debe utilizar de la siguiente manera : 
+
+'' 
+export DIGITALOCEAN_API_TOKEN = [TOKEN-DigitalOcean]
+''
+
+3. Luego usted se debe ubicar en el subdirectorio de packer y ejecutar: 
+'' 
+packer build ubuntu2004-digitalocean.json 
+'' 

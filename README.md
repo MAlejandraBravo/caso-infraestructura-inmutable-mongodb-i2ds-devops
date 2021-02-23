@@ -42,7 +42,7 @@ terraform apply
 
 6. Puede ingresar a la maquina creada mediante la dirección IP con : 
 ```
-ssh -L localhost:8889:localhost:8889 root@[DirecciónIP]
+ssh -L localhost:8888:localhost:8888 root@[DirecciónIP]
 ```
 7.Ejecute el siguiente script en bash que le permitirá importar los archivos CSV hacia MongoBD: 
 
@@ -71,7 +71,7 @@ chmod a+x mongoimport-everything.sh
 
 8. Siguiendo en la máquina ejecute la siguiente línea que le permitirá tener acceso desde su navegador:
 ```
-jupyter notebook list 
+jupyter notebook --allow-root
 ```
 
 En su navegador copie la url que se le indica y utilice el token si fuese necesario. 
